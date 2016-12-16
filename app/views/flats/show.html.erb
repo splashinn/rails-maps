@@ -1,0 +1,19 @@
+<div class="row-fluid">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="row">
+      <h2><%= @flat.name %></h2>
+      <p><%= @flat.address %></p>
+      <p>Latitude: <%= @flat.latitude %></p>
+      <p>Longitude: <%= @flat.longitude %></p>
+
+      <%= link_to "Edit", edit_flat_path(@flat), class: "btn btn-primary" %>
+      <%= link_to "Back", flats_path, class: "btn btn-primary" %>
+    </div>
+
+    <div class="row">
+      <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?center=#{@flat.latitude},#{@flat.longitude}&zoom=14&size=640x400&markers=color:black%7C#{@flat.latitude},#{@flat.longitude}" %>
+    </div>
+
+  </div>
+
+</div>
