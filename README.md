@@ -2,10 +2,6 @@
 - Enter an address and it puts a placer on the map.
 - Using Google Maps
 
-## To Do
-- Ability to add layers
-- Upload own map files and be able to manipulate data.
-
 ## Testing the app
 
 - fork / clone the repo
